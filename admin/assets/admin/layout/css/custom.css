@@ -1,0 +1,17 @@
+/* here you can put your own css to customize and override the theme */
+ span.error{
+	 color:#F00;
+	 margin-top:1px;
+	 margin-bottom:10px}
+ span.success{
+	 color:#00ba09;
+	 margin-bottom:10px}	 
+ div.has-error{
+margin-bottom:5px;
+
+	 }
+.required{
+	
+	font-size:10px;
+	color:red;
+	}
