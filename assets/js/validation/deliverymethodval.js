@@ -1,0 +1,37 @@
+
+function deliverymethod(){	
+   $('input[type=text],input[type=password],input[type=number], input[type=checkbox], input[type=radio],select').each(function() {
+   if($(this).val() !== "")
+       
+    $(this).css({  'border-color' : '#00ba09','background-image':'url(http://localhost/mtc/assets/js/images/valid.png)','background-repeat': 'no-repeat','background-position': 'right center'}).parent('div.has-error').children('span.error').html('');
+	});
+    
+
+
+
+ var errormessage="";
+ 
+if ($('input[name=delivery]:checked').length<=0){
+		 
+		error_display($('#sex'),'Please select one delivery method. ');     
+		errormessage += 1;
+    } 
+
+ 
+
+		
+
+			
+			if(errormessage != ''){
+                return false;
+            }
+	
+}
+  
+    
+	// your part
+	function error_display(field,msg){
+       field.css({  'border-color' : '#f00','background-image':'url(http://localhost/mtc/assets/js/images/invalid.png)','background-repeat': 'no-repeat','background-position': 'right center','margin-bottom':'2px'}).parent('div.has-error').children('span.error').html(msg);	
+
+	}
+
